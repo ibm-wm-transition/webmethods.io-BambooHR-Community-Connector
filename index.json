@@ -1,0 +1,79 @@
+{
+  "name": "BambooHR",
+  "description": "BambooHR",
+  "triggers": [],
+  "actions": [
+    "/v1/get_emplyoee_directory",
+    "/v1/update_emplyoee",
+    "/v1/get_emplyoee_details",
+    "/v1/add_emplyoee",
+    "/v1/get_time_off_types",
+    "/v1/get_time_off_policies",
+    "/v1/get_time_off_requests",
+    "/v1/list_time_off_policies_for_a_employee",
+    "/v1/estimate_future_time_off_balances",
+    "/v1/get_a_list_of_who's_out",
+    "/v1/get_company_report",
+    "/v1/request_a_custom_report",
+    "/v1/change_a_request_status",
+    "/v1/add_an_employee_dependent",
+    "/v1/get_a_benefit_coverage",
+    "/v1/get_all_employee_dependents",
+    "/v1/get_benefit_coverages",
+    "/v1/get_benefit_deduction_types",
+    "/v1/get_employee_dependent",
+    "/v1/update_an_employee_dependent",
+    "/v1/list_employee_files_and_categories"
+  ],
+  "version": 1,
+  "auth_type": "custom",
+  "docs_link": "http://docs.example.com",
+  "appId": "57fe8dc8-58de-4d78-8842-be6455c3029c",
+  "guid": "15abbbd9-0449-43c8-8261-44cd3638bde7",
+  "connectionUid": "bamboohr_1582015639496",
+  "lookup": true,
+  "lookup_attachments": [
+    {
+      "lookup_id": "emplyoee_id",
+      "action_id": "/v1/update_emplyoee",
+      "field_id": "eid",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "emplyoee_id",
+      "action_id": "/v1/get_emplyoee_details",
+      "field_id": "eid",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "emplyoee_id",
+      "action_id": "/v1/list_time_off_policies_for_a_employee",
+      "field_id": "eid",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "takeoff_request",
+      "action_id": "/v1/change_a_request_status",
+      "field_id": "rid",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_benefit_coverage_id",
+      "action_id": "/v1/get_a_benefit_coverage",
+      "field_id": "benefit_id",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_employee_dependent_id",
+      "action_id": "/v1/get_employee_dependent",
+      "field_id": "dependent_id",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "user_id",
+      "action_id": "/v1/list_employee_files_and_categories",
+      "field_id": "id",
+      "dependencies": []
+    }
+  ]
+}
