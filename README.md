@@ -29,7 +29,7 @@ Learn about other supported actions [here](https://documentation.bamboohr.com/re
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-This connector requires any [Node](https://nodejs.org/dist/) version between 4.x.x and 8 .14.
+This connector requires any [Node](https://nodejs.org/dist/) version between 8.14.0 and 10.14.2.
 
 Note: If you have installed any other Node version on your system, you can:
 1. Use tools to switch between different versions of Node
